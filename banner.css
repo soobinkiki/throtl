@@ -1,0 +1,114 @@
+/******************* Default ******************/ 
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --main-orange-color: rgba(238,81,36,255);
+}
+
+/**********************************************/
+
+/*************** Main Section *****************/
+.banner-main-container {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/**********************************************/
+
+/******** Left(or Top: mobile) Section ********/
+.title-container {
+    background-color: var(--main-orange-color);
+    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: calc(50% - 130px);
+}
+.title-inner {
+    display: flex;
+    height: 100%;
+    letter-spacing: 1px;
+    line-height: 2em;
+    font-size: 0.8em;
+    font-style: italic;
+}
+.title {
+    padding: 20px;
+    transform: translateY(10px);
+}
+.throtl-logo img {
+    width: 150px;
+    height: 123px;
+}
+#joinVIP-btn {
+    width: 72px;
+    height: 25px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    margin-top: 4px;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/**********************************************/
+
+/****** Right(or Bottom: mobile) Section ******/
+.content-container {
+    background: linear-gradient( rgba(62,48,44,0.5), rgba(62,48,44,0.5) ), 
+                url("./Images/Tire-Thread.png");
+    background-position: top right -150px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px; 
+    width: calc(50% - 80px);
+    margin-left: -90px;
+    clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.content-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-left: 75px;
+    margin-top: 28px;
+}
+.content-inner img {
+    background: var(--main-orange-color);
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 3px;
+    width: 17px;
+    height: 17px;
+}
+.content-inner .content-logo:nth-child(2) img,
+.content-inner .content-logo:nth-child(2) p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.content-logo {
+    display: flex;
+}
+.content-logo p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    transform: translateY(2px);
+}
+
+.title-container, .content-container {
+    color: white;
+    padding: 20px;
+    height: 170px;
+}
+/**********************************************/
+
+
+
+
