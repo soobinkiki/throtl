@@ -33,6 +33,10 @@
     border-bottom-left-radius: 15px;
     width: calc(50% - 130px);
 }
+.throtl-logo img {
+    width: 150px;
+    height: 123px;
+}
 .title-inner {
     display: flex;
     /* height: 100%; */
@@ -47,10 +51,6 @@
 }
 .title h1 {
     width: 200px;
-}
-.throtl-logo img {
-    width: 150px;
-    height: 123px;
 }
 #joinVIP-btn {
     width: 72px;
@@ -129,86 +129,13 @@
 
 @media (min-width: 280px) and (max-width: 1440px) {
     .banner-main-container {
-        margin: 0 auto;
-        display: inline-block;
-        width: 850px;
-        overflow: hidden;
-        border-top-left-radius: 50px;
-    }
-}
-@media (max-width: 1440px) {
-    /******** Left(or Top: mobile) Section ********/
-    .title-container {
-        border-top-right-radius: 50px;
-        clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        width: calc(50% + 425px);
-        height: 825px;
+        /* margin: 0 auto; */
+        display: block;
     }
     .title-inner {
-        display: inline-block;
+        display: block;
         width: 100%;
-        font-size: 2.3em;
     }
-    .title {
-        transform: translateY(-30px);
-    }
-    .title h1 {
-        transform: translateX(20px);
-        width: 600px;
-    }
-    .throtl-logo img {
-        width: 350px;
-        height: 250px;
-        margin: 10px;
-    }
-    #joinVIP-btn {
-        width: 270px;
-        height: 100px;
-        font-size: 1.1em;
-        transform: translateX(20px);
-        background-color: black;
-        color: white;
-        margin-top: 20px;
-    }
-    /**********************************************/
-    
-    /****** Right(or Bottom: mobile) Section ******/
-    .content-container {
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px; 
-        width: calc(50% + 425px);
-        height: 800px;
-        margin-left: 0px;
-        transform: translateY(-380px);
-        clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
-    }
-    .content-inner {
-        margin-left: 20px;
-        margin-top: 370px;
-    }
-    .content-inner img {
-        padding: 15px;
-        margin-right: 40px;
-        width: 70px;
-        height: 70px;
-    }
-    .content-inner .content-logo:nth-child(2) img,
-    .content-inner .content-logo:nth-child(2) p {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .content-logo p {
-        font-size: 35px;
-        letter-spacing: 1px;
-        transform: translateY(2px);
-    }
-    /**********************************************/
-
-}
-@media (min-width: 800px) and (max-width: 1280px) {
-
 }
 @media(max-width: 1024px) {
 
@@ -229,7 +156,71 @@
 
 }
 @media(max-width: 280px) {
+    /*************** Main Section *****************/
+    .banner-main-container {
+        /* overflow: hidden;
+        border-top-left-radius: 50px; */
+        width: 80%;
+        height: 80%;
+        
+    }
+    /**********************************************/
 
+    /******** Left(or Top: mobile) Section ********/
+    .title-container {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 0px;
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+        width: calc(50% + 110px);
+        height: 255px;
+        transform: translateY(51px);
+    }
+    .throtl-logo img {
+        width: 100px;
+        height: 80px;
+    }
+    .title-inner {
+        font-size: 0.6em;
+        transform: translateX(-10px);
+    }
+    .title {
+        transform: translateY(-15px);
+        padding: 10px;
+    }
+    #joinVIP-btn {
+        width: 82px;
+        height: 30px;
+        margin-top: 6px;
+    }
+    /**********************************************/
+
+    /****** Right(or Bottom: mobile) Section ******/
+    .content-container {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 15px; 
+        border-bottom-left-radius: 15px; 
+        width: calc(50% + 110px);
+        height: 290px;
+        margin-left: 0px;
+        clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0% 100%);
+        transform: translateY(-86px);
+    }
+    .content-inner {
+        margin-left: 0px;
+        margin-top: 130px;
+    }
+    .content-inner img {
+        margin-right: 15px;
+        padding: 2px;
+        width: 20px;
+        height: 20px;
+    }
+    .content-logo p {
+        font-size: 10px;
+        letter-spacing: 1px;
+        transform: translateY(-1px);
+    }
+    /**********************************************/
 }
-/**********************************************/
 

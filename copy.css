@@ -1,0 +1,150 @@
+@media (max-width: 1440px) {
+    /*************** Main Section *****************/
+    .banner-main-container {
+        overflow: hidden;
+        border-top-left-radius: 50px;
+        width: 60%;
+        height: 50%;
+    }
+    /**********************************************/
+
+    /******** Left(or Top: mobile) Section ********/
+    .title-container {
+        border-top-right-radius: 50px;
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+        width: calc(50% + 425px);
+        height: 825px;
+    }
+    .throtl-logo img {
+        width: 350px;
+        height: 250px;
+        margin: 10px;
+    }
+    .title-inner {
+        font-size: 2.3em;
+    }
+    .title {
+        transform: translateY(-30px);
+    }
+    .title h1 {
+        transform: translateX(20px);
+        width: 600px;
+    }
+    #joinVIP-btn {
+        width: 270px;
+        height: 100px;
+        font-size: 1.1em;
+        transform: translateX(20px);
+        background-color: black;
+        color: white;
+        margin-top: 20px;
+    }
+    /**********************************************/
+    
+    /****** Right(or Bottom: mobile) Section ******/
+    .content-container {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px; 
+        width: calc(50% + 425px);
+        height: 800px;
+        margin-left: 0px;
+        transform: translateY(-380px);
+        clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+    }
+    .content-inner {
+        margin-left: 20px;
+        margin-top: 370px;
+    }
+    .content-inner img {
+        padding: 15px;
+        margin-right: 40px;
+        width: 70px;
+        height: 70px;
+    }
+    .content-inner .content-logo:nth-child(2) img,
+    .content-inner .content-logo:nth-child(2) p {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .content-logo p {
+        font-size: 35px;
+        letter-spacing: 1px;
+        transform: translateY(2px);
+    }
+    /**********************************************/
+}
+@media (max-width: 1280px) {
+    .banner-main-container {
+        /* overflow: hidden; */
+        border-top-right-radius: 50px;
+        /* border-bottom-right-radius: 50px;  */
+        width: 35%;
+        height: 90%;
+    }
+    /******** Left(or Top: mobile) Section ********/
+    .title-container {
+        /* border-top-left-radius: 50px; */
+        /* clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%); */
+        width: calc(50% + 425px);
+        height: 425px;
+        transform: translateY(50px);
+    }
+    .title-inner {
+        font-size: 1.3em;
+    }
+    .title {
+        transform: translateY(-30px);
+    }
+    .title h1 {
+        transform: translateX(20px);
+        width: 600px;
+    }
+    .throtl-logo img {
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+    }
+    #joinVIP-btn {
+        width: 270px;
+        height: 100px;
+        font-size: 1.1em;
+        transform: translateX(20px);
+        background-color: black;
+        color: white;
+        margin-top: 20px;
+    }
+    /**********************************************/
+    
+    /****** Right(or Bottom: mobile) Section ******/
+    .content-container {
+        /* border-bottom-left-radius: 50px; */
+        overflow: hidden;
+        border-bottom-right-radius: 50px; 
+        width: calc(50% + 425px);
+        height: 400px;
+        /* margin-left: 0px; */
+        transform: translateY(-150px);
+        clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+    }
+    .content-inner {
+        margin-left: 20px;
+        margin-top: 370px;
+    }
+    .content-inner img {
+        padding: 15px;
+        margin-right: 40px;
+        width: 70px;
+        height: 70px;
+    }
+    .content-inner .content-logo:nth-child(2) img,
+    .content-inner .content-logo:nth-child(2) p {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .content-logo p {
+        font-size: 35px;
+        letter-spacing: 1px;
+        transform: translateY(2px);
+    }
+    /**********************************************/
+}
