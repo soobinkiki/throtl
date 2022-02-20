@@ -125,10 +125,7 @@
 /**********************************************/
 
 
-
-
 /****************** Mobile ********************/
-
 @media (min-width: 280px) and (max-width: 1023px) {
     .banner-main-container {
         /* margin: auto; */
@@ -141,17 +138,88 @@
         width: 100%;
     }
 }
-@media(max-width: 1023px) {
-
+@media (min-width: 769px) and (max-width: 1023px) {
+        /*************** Main Section *****************/
+        .banner-main-container {
+            width: 800px;
+            height: 100%; 
+        }
+        /**********************************************/
+    
+        /******** Left(or Top: mobile) Section ********/
+        .title-container {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 0px;
+            clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+            width: calc(50% + 100px);
+            margin-left: auto;
+            margin-right: auto;
+            height: 485px;
+        }
+        .throtl-logo img {
+            width: 190px;
+            height: 140px;
+        }
+        .title-inner {
+            font-size: 1.5em;
+            line-height: 2.2em;
+            letter-spacing: 0px;
+        }
+        .title {
+            transform: translateY(-15px);
+            padding: 10px;
+        }
+        .title h1 {
+            width: 500px;
+        }
+        #joinVIP-btn {
+            width: 189px;
+            height: 60px;
+            margin-top: 12px;
+            font-size: 24px;
+        }
+        /**********************************************/
+    
+        /****** Right(or Bottom: mobile) Section ******/
+        .content-container {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 15px; 
+            border-bottom-left-radius: 15px; 
+            width: calc(50% + 100px);
+            height: 525px;
+            margin-left: auto;
+            margin-right: auto;
+            clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0% 100%);
+            transform: translateY(-250px);
+            
+        }
+        .content-inner {
+            margin-left: 0px;
+            margin-top: 240px;
+        }
+        .content-inner .content-logo:nth-child(2) img,
+        .content-inner .content-logo:nth-child(2) p {
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+        .content-inner img {
+            margin-right: 15px;
+            padding: 7px;
+            width: 40px;
+            height: 40px;
+        }
+        .content-logo p {
+            font-size: 20px;
+            transform: translateY(2px);
+        }
+        /**********************************************/
 }
-/* @media(max-width: 768px) {
-
-} */
 @media (min-width: 541px) and (max-width: 768px) {
     /*************** Main Section *****************/
     .banner-main-container {
         width: 560px;
-        height: 80%; 
+        height: 100%; 
     }
     /**********************************************/
 
@@ -165,7 +233,6 @@
         margin-left: auto;
         margin-right: auto;
         height: 355px;
-        transform: translateY(10px);
     }
     .throtl-logo img {
         width: 150px;
@@ -201,7 +268,7 @@
         margin-left: auto;
         margin-right: auto;
         clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0% 100%);
-        transform: translateY(-180px);
+        transform: translateY(-190px);
         
     }
     .content-inner {
@@ -229,7 +296,7 @@
     /*************** Main Section *****************/
     .banner-main-container {
         width: 400px;
-        height: 80%; 
+        height: 100%; 
     }
     /**********************************************/
 
@@ -243,7 +310,7 @@
         margin-left: auto;
         margin-right: auto;
         height: 305px;
-        transform: translateY(51px);
+        /* transform: translateY(51px); */
     }
     .throtl-logo img {
         width: 120px;
@@ -278,7 +345,7 @@
         margin-left: auto;
         margin-right: auto;
         clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0% 100%);
-        transform: translateY(-126px);
+        transform: translateY(-170px);
         
     }
     .content-inner {
@@ -308,7 +375,7 @@
     /*************** Main Section *****************/
     .banner-main-container {
         width: 280px;
-        height: 80%; 
+        height: 100%; 
     }
     /**********************************************/
 
@@ -322,7 +389,7 @@
         margin-left: auto;
         margin-right: auto;
         height: 255px;
-        transform: translateY(51px);
+        /* transform: translateY(51px); */
     }
     .throtl-logo img {
         width: 100px;
@@ -355,7 +422,7 @@
         margin-left: auto;
         margin-right: auto;
         clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0% 100%);
-        transform: translateY(-86px);
+        transform: translateY(-136px);
         
     }
     .content-inner {
