@@ -168,21 +168,26 @@
         transform: translateY(10px);
     }
     .throtl-logo img {
-        width: 100px;
-        height: 80px;
+        width: 150px;
+        height: 100px;
     }
     .title-inner {
-        font-size: 0.6em;
-        transform: translateX(-10px);
+        font-size: 1.1em;
+        line-height: 2.2em;
+        letter-spacing: 0px;
     }
     .title {
         transform: translateY(-15px);
         padding: 10px;
     }
+    .title h1 {
+        width: 350px;
+    }
     #joinVIP-btn {
-        width: 82px;
-        height: 30px;
+        width: 136px;
+        height: 44px;
         margin-top: 6px;
+        font-size: 18px;
     }
     /**********************************************/
 
@@ -201,12 +206,12 @@
     }
     .content-inner {
         margin-left: 0px;
-        margin-top: 150px;
+        margin-top: 170px;
     }
     .content-inner .content-logo:nth-child(2) img,
     .content-inner .content-logo:nth-child(2) p {
-        margin-top: 24px;
-        margin-bottom: 24px;
+        margin-top: 28px;
+        margin-bottom: 28px;
     }
     .content-inner img {
         margin-right: 15px;
@@ -220,10 +225,7 @@
     }
     /**********************************************/
 }
-@media (min-width: 426px) and (max-width: 540px) {
-    
-}
-@media (min-width: 376px) and (max-width: 425px) {
+@media (min-width: 376px) and (max-width: 540px) {
     /*************** Main Section *****************/
     .banner-main-container {
         width: 400px;
@@ -237,7 +239,7 @@
         border-top-right-radius: 25px;
         border-bottom-left-radius: 0px;
         clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
-        width: calc(50% + 135px);
+        width: calc(50% + 127px);
         margin-left: auto;
         margin-right: auto;
         height: 305px;
@@ -259,10 +261,10 @@
         width: 250px;
     }
     #joinVIP-btn {
-        width: 92px;
+        width: 111px;
         height: 35px;
         margin-top: 6px;
-        font-size: 12px;
+        font-size: 13px;
     }
     /**********************************************/
 
@@ -271,7 +273,7 @@
         border-top-right-radius: 0px;
         border-bottom-right-radius: 15px; 
         border-bottom-left-radius: 15px; 
-        width: calc(50% + 135px);
+        width: calc(50% + 127px);
         height: 340px;
         margin-left: auto;
         margin-right: auto;
@@ -330,6 +332,7 @@
         font-size: 0.65em;
         transform: translateX(-10px);
         line-height: 2.2em;
+        letter-spacing: 0;
     }
     .title {
         transform: translateY(-15px);
