@@ -1,3 +1,5 @@
+/************************************ Desktop **************************************/
+
 /******************* Default ******************/ 
 *, *::before, *::after {
     margin: 0;
@@ -5,7 +7,6 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
 :root {
     --main-orange-color: rgba(238,81,36,255);
 }
@@ -86,9 +87,6 @@
     clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .content-inner {
-    /* position: relative; */
-    /* height: 100%; */
-    /* width: 100%; */
     margin-left: 75px;
     margin-top: 28px;
 }
@@ -113,7 +111,6 @@
     letter-spacing: 1px;
     transform: translateY(2px);
 }
-
 /**********************************************/
 
 /*************** LEFT and RIGHT ***************/
@@ -125,113 +122,119 @@
 /**********************************************/
 
 
-/****************** Mobile ********************/
-@media (min-width: 280px) and (max-width: 1023px) {
+
+
+/************************************ Mobile **************************************/
+@media (min-width: 280px) 
+   and (max-width: 1023px) {
+    /*************** Main Section *****************/
     .banner-main-container {
-        /* margin: auto; */
         display: block;
-        /* justify-content: center;
-        align-items: center; */
+        height: 100%;
     }
+    /**********************************************/
+
+    /******** Left(or Top: mobile) Section ********/
     .title-inner {
         display: block;
         width: 100%;
+        line-height: 2.2em;
+        letter-spacing: 0px;
     }
+    .title-container {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /**********************************************/
+
+    /****** Right(or Bottom: mobile) Section ******/
+    .content-container {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 20px; 
+        border-bottom-left-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0% 100%);
+    }
+    /**********************************************/    
 }
-@media (min-width: 769px) and (max-width: 1023px) {
-        /*************** Main Section *****************/
-        .banner-main-container {
-            width: 800px;
-            height: 100%; 
-        }
-        /**********************************************/
-    
-        /******** Left(or Top: mobile) Section ********/
-        .title-container {
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom-left-radius: 0px;
-            clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
-            width: calc(50% + 100px);
-            margin-left: auto;
-            margin-right: auto;
-            height: 485px;
-        }
-        .throtl-logo img {
-            width: 190px;
-            height: 140px;
-        }
-        .title-inner {
-            font-size: 1.5em;
-            line-height: 2.2em;
-            letter-spacing: 0px;
-        }
-        .title {
-            transform: translateY(-15px);
-            padding: 10px;
-        }
-        .title h1 {
-            width: 500px;
-        }
-        #joinVIP-btn {
-            width: 189px;
-            height: 60px;
-            margin-top: 12px;
-            font-size: 24px;
-        }
-        /**********************************************/
-    
-        /****** Right(or Bottom: mobile) Section ******/
-        .content-container {
-            border-top-right-radius: 0px;
-            border-bottom-right-radius: 15px; 
-            border-bottom-left-radius: 15px; 
-            width: calc(50% + 100px);
-            height: 525px;
-            margin-left: auto;
-            margin-right: auto;
-            clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0% 100%);
-            transform: translateY(-250px);
-            
-        }
-        .content-inner {
-            margin-left: 0px;
-            margin-top: 240px;
-        }
-        .content-inner .content-logo:nth-child(2) img,
-        .content-inner .content-logo:nth-child(2) p {
-            margin-top: 35px;
-            margin-bottom: 35px;
-        }
-        .content-inner img {
-            margin-right: 15px;
-            padding: 7px;
-            width: 40px;
-            height: 40px;
-        }
-        .content-logo p {
-            font-size: 20px;
-            transform: translateY(2px);
-        }
-        /**********************************************/
-}
-@media (min-width: 541px) and (max-width: 768px) {
+@media (min-width: 769px) 
+   and (max-width: 1023px) {
     /*************** Main Section *****************/
     .banner-main-container {
-        width: 560px;
-        height: 100%; 
+        width: 800px;
     }
     /**********************************************/
 
     /******** Left(or Top: mobile) Section ********/
     .title-container {
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 0px;
-        clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+        width: calc(50% + 100px);
+        height: 485px;
+    }
+    .throtl-logo img {
+        width: 190px;
+        height: 140px;
+    }
+    .title-inner {
+        font-size: 1.5em;
+    }
+    .title {
+        transform: translateY(-15px);
+        padding: 10px;
+    }
+    .title h1 {
+        width: 500px;
+    }
+    #joinVIP-btn {
+        width: 189px;
+        height: 60px;
+        margin-top: 12px;
+        font-size: 24px;
+    }
+    /**********************************************/
+
+    /****** Right(or Bottom: mobile) Section ******/
+    .content-container {
+        width: calc(50% + 100px);
+        height: 525px;
+        transform: translateY(-250px);
+    }
+    .content-inner {
+        margin-left: 0px;
+        margin-top: 240px;
+    }
+    .content-inner .content-logo:nth-child(2) img,
+    .content-inner .content-logo:nth-child(2) p {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    .content-inner img {
+        margin-right: 15px;
+        padding: 7px;
+        width: 40px;
+        height: 40px;
+    }
+    .content-logo p {
+        font-size: 20px;
+        transform: translateY(2px);
+    }
+    /**********************************************/
+}
+@media (min-width: 541px) 
+   and (max-width: 768px) {
+    /*************** Main Section *****************/
+    .banner-main-container {
+        width: 560px;
+    }
+    /**********************************************/
+
+    /******** Left(or Top: mobile) Section ********/
+    .title-container {     
         width: calc(50% + 110px);
-        margin-left: auto;
-        margin-right: auto;
         height: 355px;
     }
     .throtl-logo img {
@@ -240,8 +243,6 @@
     }
     .title-inner {
         font-size: 1.1em;
-        line-height: 2.2em;
-        letter-spacing: 0px;
     }
     .title {
         transform: translateY(-15px);
@@ -260,16 +261,9 @@
 
     /****** Right(or Bottom: mobile) Section ******/
     .content-container {
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 15px; 
-        border-bottom-left-radius: 15px; 
         width: calc(50% + 110px);
         height: 395px;
-        margin-left: auto;
-        margin-right: auto;
-        clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0% 100%);
         transform: translateY(-190px);
-        
     }
     .content-inner {
         margin-left: 0px;
@@ -292,25 +286,18 @@
     }
     /**********************************************/
 }
-@media (min-width: 376px) and (max-width: 540px) {
+@media (min-width: 376px) 
+   and (max-width: 540px) {
     /*************** Main Section *****************/
     .banner-main-container {
         width: 400px;
-        height: 100%; 
     }
     /**********************************************/
 
     /******** Left(or Top: mobile) Section ********/
     .title-container {
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 0px;
-        clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
         width: calc(50% + 127px);
-        margin-left: auto;
-        margin-right: auto;
         height: 305px;
-        /* transform: translateY(51px); */
     }
     .throtl-logo img {
         width: 120px;
@@ -328,7 +315,7 @@
         width: 250px;
     }
     #joinVIP-btn {
-        width: 111px;
+        width: 101px;
         height: 35px;
         margin-top: 6px;
         font-size: 13px;
@@ -337,14 +324,8 @@
 
     /****** Right(or Bottom: mobile) Section ******/
     .content-container {
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 15px; 
-        border-bottom-left-radius: 15px; 
         width: calc(50% + 127px);
         height: 340px;
-        margin-left: auto;
-        margin-right: auto;
-        clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0% 100%);
         transform: translateY(-170px);
         
     }
@@ -370,26 +351,19 @@
     /**********************************************/
 }
 
-/* the smallest screen size is currently 280px Galaxy Fold - UPDATED: 02/20/22 */
-@media (min-width: 280px) and (max-width: 375px) {
+/* The current smallest screen size is 280px with Galaxy Fold - UPDATED: 02/20/22 */
+@media (min-width: 280px) 
+   and (max-width: 375px) {
     /*************** Main Section *****************/
     .banner-main-container {
         width: 280px;
-        height: 100%; 
     }
     /**********************************************/
 
     /******** Left(or Top: mobile) Section ********/
     .title-container {
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 0px;
-        clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
         width: calc(50% + 110px);
-        margin-left: auto;
-        margin-right: auto;
         height: 255px;
-        /* transform: translateY(51px); */
     }
     .throtl-logo img {
         width: 100px;
@@ -398,8 +372,6 @@
     .title-inner {
         font-size: 0.65em;
         transform: translateX(-10px);
-        line-height: 2.2em;
-        letter-spacing: 0;
     }
     .title {
         transform: translateY(-15px);
@@ -414,14 +386,8 @@
 
     /****** Right(or Bottom: mobile) Section ******/
     .content-container {
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 15px; 
-        border-bottom-left-radius: 15px; 
         width: calc(50% + 110px);
         height: 290px;
-        margin-left: auto;
-        margin-right: auto;
-        clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0% 100%);
         transform: translateY(-136px);
         
     }
