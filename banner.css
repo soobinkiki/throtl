@@ -32,6 +32,8 @@
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     width: calc(50% - 130px);
+    margin-left: auto;
+    margin-right: 0px;
 }
 .throtl-logo img {
     width: 150px;
@@ -39,7 +41,6 @@
 }
 .title-inner {
     display: flex;
-    /* height: 100%; */
     letter-spacing: 1px;
     line-height: 2em;
     font-size: 0.8em;
@@ -80,7 +81,8 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px; 
     width: calc(50% - 80px);
-    margin-left: -90px;
+    margin-left: -80px;
+    margin-right: auto;
     clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .content-inner {
@@ -127,7 +129,7 @@
 
 /****************** Mobile ********************/
 
-@media (min-width: 280px) and (max-width: 1440px) {
+@media (min-width: 280px) and (max-width: 1023px) {
     .banner-main-container {
         /* margin: auto; */
         display: block;
@@ -139,22 +141,168 @@
         width: 100%;
     }
 }
-@media(max-width: 1024px) {
+@media(max-width: 1023px) {
 
 }
-@media(max-width: 768px) {
+/* @media(max-width: 768px) {
 
-}
-@media(max-width: 540px) {
+} */
+@media (min-width: 541px) and (max-width: 768px) {
+    /*************** Main Section *****************/
+    .banner-main-container {
+        width: 560px;
+        height: 80%; 
+    }
+    /**********************************************/
 
-}
-@media(max-width: 425px) {
+    /******** Left(or Top: mobile) Section ********/
+    .title-container {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 0px;
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+        width: calc(50% + 110px);
+        margin-left: auto;
+        margin-right: auto;
+        height: 355px;
+        transform: translateY(10px);
+    }
+    .throtl-logo img {
+        width: 100px;
+        height: 80px;
+    }
+    .title-inner {
+        font-size: 0.6em;
+        transform: translateX(-10px);
+    }
+    .title {
+        transform: translateY(-15px);
+        padding: 10px;
+    }
+    #joinVIP-btn {
+        width: 82px;
+        height: 30px;
+        margin-top: 6px;
+    }
+    /**********************************************/
 
+    /****** Right(or Bottom: mobile) Section ******/
+    .content-container {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 15px; 
+        border-bottom-left-radius: 15px; 
+        width: calc(50% + 110px);
+        height: 395px;
+        margin-left: auto;
+        margin-right: auto;
+        clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0% 100%);
+        transform: translateY(-180px);
+        
+    }
+    .content-inner {
+        margin-left: 0px;
+        margin-top: 150px;
+    }
+    .content-inner .content-logo:nth-child(2) img,
+    .content-inner .content-logo:nth-child(2) p {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .content-inner img {
+        margin-right: 15px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+    }
+    .content-logo p {
+        font-size: 15px;
+        transform: translateY(1px);
+    }
+    /**********************************************/
 }
-@media(max-width: 375px) {
+@media (min-width: 426px) and (max-width: 540px) {
     
 }
-@media (max-width: 320px) {
+@media (min-width: 376px) and (max-width: 425px) {
+    /*************** Main Section *****************/
+    .banner-main-container {
+        width: 400px;
+        height: 80%; 
+    }
+    /**********************************************/
+
+    /******** Left(or Top: mobile) Section ********/
+    .title-container {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 0px;
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+        width: calc(50% + 135px);
+        margin-left: auto;
+        margin-right: auto;
+        height: 305px;
+        transform: translateY(51px);
+    }
+    .throtl-logo img {
+        width: 120px;
+        height: 90px;
+    }
+    .title-inner {
+        font-size: 0.8em;
+        transform: translateX(-10px);
+    }
+    .title {
+        transform: translateY(-15px);
+        padding: 10px;
+    }
+    .title h1 {
+        width: 250px;
+    }
+    #joinVIP-btn {
+        width: 92px;
+        height: 35px;
+        margin-top: 6px;
+        font-size: 12px;
+    }
+    /**********************************************/
+
+    /****** Right(or Bottom: mobile) Section ******/
+    .content-container {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 15px; 
+        border-bottom-left-radius: 15px; 
+        width: calc(50% + 135px);
+        height: 340px;
+        margin-left: auto;
+        margin-right: auto;
+        clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0% 100%);
+        transform: translateY(-126px);
+        
+    }
+    .content-inner {
+        margin-left: 0px;
+        margin-top: 155px;
+    }
+    .content-inner img {
+        margin-right: 12px;
+        padding: 4px;
+        width: 25px;
+        height: 25px;
+    }
+    .content-inner .content-logo:nth-child(2) img,
+    .content-inner .content-logo:nth-child(2) p {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .content-logo p {
+        font-size: 12px;
+        transform: translateY(-1px);
+    }
+    /**********************************************/
+}
+
+/* the smallest screen size is currently 280px Galaxy Fold - UPDATED: 02/20/22 */
+@media (min-width: 280px) and (max-width: 375px) {
     /*************** Main Section *****************/
     .banner-main-container {
         width: 280px;
@@ -179,8 +327,9 @@
         height: 80px;
     }
     .title-inner {
-        font-size: 0.6em;
+        font-size: 0.65em;
         transform: translateX(-10px);
+        line-height: 2.2em;
     }
     .title {
         transform: translateY(-15px);
@@ -218,7 +367,6 @@
     }
     .content-logo p {
         font-size: 10px;
-        letter-spacing: 1px;
         transform: translateY(-1px);
     }
     /**********************************************/
