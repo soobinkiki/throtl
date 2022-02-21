@@ -1,7 +1,6 @@
-# Throtl 
-- Throtl VIP Banner project
+# Throtl VIP Banner project 
 
-How to open the project
+### How to open the project
 1. Please clone the repository to your local machine.
 2. Locate to the project folder
 3. Open the Banner.html
