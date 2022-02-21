@@ -124,8 +124,9 @@
 
 
 
-/************************************ Mobile **************************************/
-@media (min-width: 280px) 
+/******************************* Mobile (Portrait) *********************************/
+@media (orientation: portrait) 
+   and (min-width: 280px) 
    and (max-width: 1023px) {
     /*************** Main Section *****************/
     .banner-main-container {
@@ -162,7 +163,8 @@
     }
     /**********************************************/    
 }
-@media (min-width: 769px) 
+@media (orientation: portrait) 
+   and (min-width: 769px) 
    and (max-width: 1023px) {
     /*************** Main Section *****************/
     .banner-main-container {
@@ -224,7 +226,8 @@
     }
     /**********************************************/
 }
-@media (min-width: 541px) 
+@media (orientation: portrait) 
+   and (min-width: 541px) 
    and (max-width: 768px) {
     /*************** Main Section *****************/
     .banner-main-container {
@@ -286,7 +289,8 @@
     }
     /**********************************************/
 }
-@media (min-width: 376px) 
+@media (orientation: portrait) 
+   and (min-width: 376px) 
    and (max-width: 540px) {
     /*************** Main Section *****************/
     .banner-main-container {
@@ -352,7 +356,8 @@
 }
 
 /* The current smallest screen size is 280px with Galaxy Fold - UPDATED: 02/20/22 */
-@media (min-width: 280px) 
+@media (orientation: portrait) 
+   and (min-width: 280px) 
    and (max-width: 375px) {
     /*************** Main Section *****************/
     .banner-main-container {
@@ -408,3 +413,74 @@
     /**********************************************/
 }
 
+/******************************* Mobile (Landscape) *********************************/
+@media (orientation: landscape) 
+   and (max-width: 1023px) {
+    /*************** Main Section *****************/
+    .banner-main-container {
+        width: 1000px;
+    }
+    /**********************************************/
+
+    /******** Left(or Top: mobile) Section ********/
+    .throtl-logo img {
+        width: 150px;
+        height: 123px;
+    }
+
+
+    .title-container, .content-container {
+        height: 110px;
+    }
+}
+@media (orientation: landscape) 
+   and (max-width: 768px) {
+    /*************** Main Section *****************/
+    .banner-main-container {
+        width: 900px;
+    }
+    /**********************************************/
+
+    /******** Left(or Top: mobile) Section ********/
+    .throtl-logo img {
+        width: 90px;
+        height: 73px;
+    }
+    .title-inner {
+        letter-spacing: 0px;
+        line-height: 1.5em;
+        font-size: 0.6em;
+    }
+    .title h1 {
+        width: 140px;
+    }
+    .title {
+        padding: 10px;
+        transform: translateY(5px);
+    }
+    #joinVIP-btn {
+        width: 42px;
+        height: 18px;
+        font-size: 7px;
+    }
+    /**********************************************/
+
+    /****** Right(or Bottom: mobile) Section ******/
+    .content-inner {
+        margin-left: 50px;
+        margin-top: 6px;
+    }
+    .content-inner img {
+        width: 13px;
+        height: 13px;
+    }
+    .content-inner .content-logo:nth-child(2) img,
+    .content-inner .content-logo:nth-child(2) p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .content-logo p {
+        font-size: 10px;
+        transform: translateY(-2px);
+    }
+}
