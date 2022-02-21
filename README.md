@@ -6,5 +6,5 @@
 3. Open the Banner.html
 
 ### Notes
-- I was highly focused on the mobile responsiveness and writing the clean codes.
+- I highly focused on the mobile responsiveness and writing the clean codes.
 - This is mobile responsive banner on both portrait and landscape resolution. I tested on Chrome/Safari/Firefox/Microsoft Edge/Internet Explorer and no bugs were found.
